@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Context Similaritiy</title>
+		<link rel="stylesheet" href="{{ url_for('static',filename='lib/todomvc-common/base.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='lib/todomvc-app-css/index.css')}}">
+
+		<!-- CSS overrides - remove if you don't need it -->
+		<link rel="stylesheet" href="static/css/app.css">
+	</head>
+	<body>
+    <div class="body">
+		<section class="todoapp">
+			<header class="header">
+				<h1>Similarity</h1>
+                <form id="form-container-crawl">
+                    <input id="context_crawl" class="new-todo" placeholder="What needs to be done?" autofocus>
+                </form>
+			</header>
+			<!-- This footer should hidden by default and shown when there are todos -->
+
+		</section>
+
+    </div>
+
+    <div class="todoapp temp">
+        <section class="main">
+            <input class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+                <ul id="crawl_list" class="todo-list">
+                </ul>
+        </section>
+    </div>
+    <div class="todoapp line">
+        <section class="main">
+            <input class="toggle-all" type="checkbox">
+            <label for="toggle-all">Mark all as complete</label>
+                <ul id ="google_list" class="todo-list">
+
+                </ul>
+
+        </section>
+    </div>
+
+
+    <footer class="info">
+			<a href="/"><strong><h1>Compare</h1></strong></a>
+    </footer>
+		<!-- Scripts here. Don't remove ↓ -->
+		<!-- <script src="node_modules/todomvc-common/base.js"></script> -->
+        <script src="static/js/libs/jquery.min.js"></script>
+		<script src="static/js/app.js"></script>
+
+	</body>
+</html>
