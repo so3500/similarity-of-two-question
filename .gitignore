@@ -1,3 +1,10 @@
+# project src
+google_scraper.db
+model_rnn.json
+rnn_.h5
+tokenizer.txt
+.idea
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
